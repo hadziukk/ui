@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <script src="jquery.js" ></script>
+    <script src="jquery-ui/jquery-ui.js" ></script>
+    <script>
+$(document).ready(function(){
+    $( function() {
+    $( "#accordion" ).accordion();
+  });
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  });
+    </script>
+</head>
+<body>
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+a
+        </div>
+        <h3>Section 2</h3>
+        <div>
+b
+        </div>
+        <h3>Section 3</h3>
+        <div>
+c
+        </div>
+        <h3>Section 4</h3>
+        <div>
+d
+        </div>
+</div>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">1</a></li>
+          <li><a href="#tabs-2">2</a></li>
+          <li><a href="#tabs-3">3</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p>a</p>
+        </div>
+        <div id="tabs-2">
+          <p>b</p>
+        </div>
+        <div id="tabs-3">
+          <p>c</p>
+          <p>d</p>
+        </div>
+      </div>
+
+    <p>Date: <input type="text" id="datepicker"></p>
+</body>
+</html>
